@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="360dp"
+    android:layout_height="wrap_content"
+    android:background="@color/ColorWhite"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ColorOrange">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="7dp"
+            android:text="Rating"
+            android:textColor="@color/ColorWhite"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/dialog_rider_rating_driver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/rate_trip_title_text"
+        android:textColor="@color/quantum_black_100"
+        android:textSize="20sp" />
+
+    <RatingBar
+        android:id="@+id/dialog_rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:rating="0"
+        android:theme="@style/RatingBar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|center_vertical"
+            android:layout_marginBottom="10dp"
+            android:alpha="0.7"
+            android:background="@color/ColorWhite"
+            android:text="Zero stars would be treated as not rated."
+            android:textColor="@color/ColorBlack"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/dialog_rating_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:background="@color/ColorOrange"
+            android:text="Submit"
+            android:textColor="@color/ColorWhite"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
